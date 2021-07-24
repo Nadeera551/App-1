@@ -1,10 +1,16 @@
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name = "Student")
 public class Student {
+    @Id
     private String id;
     private String name;
     private String address;
     private String contact;
 
     public Student() {
+
     }
 
     public Student(String id, String name, String address, String contact) {
